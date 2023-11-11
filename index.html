@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="icon-cih.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMULER UN CREDIT</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+       
+    </style>
+</head>
+<body>
+
+
+    <div class="divall">
+
+    
+
+
+    <section class="flex-col">
+        <div class="title ">
+            <p class="text-center font-black text-orange-600 tracking-widest text-3xl py-12">Simuler mon crédit</p> <center><img src="CIH-Bank-removebg-preview.png" alt="Cih-bank" width="80px" class="cih"></center>
+        </div>
+    </section>
+    <p class="p2">Choisissez le taux , le montant et la durée de votre crédit</p>
+    <br>
+    
+<section class="container">
+
+    Taux <sup><small>% </small></sup><input type="range" id="Taux1" min="2" max="13" step="0.1" class="w-1/2 h-2 bg-yellow-500 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"><sub><small> 13%</small></sub>
+    <br>
+    
+    Montnat <sup><small>DHS </small></sup><input type="range" id="Montant1" min="5000" max="5000000" step="1000" class="w-1/2 h-2 bg-yellow-500 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"><sub><small> 5,000,000 dhs</small></sub>
+    <br>
+    
+    Durée <sup><small>MOIS </small></sup><input type="range" id="Duree1" min="6" max="300" class="w-1/2 h-2 bg-yellow-500 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"><sub><small> 300 mois</small></sub>
+    
+      <center>
+      
+      
+      
+      </center>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</section>
+
+<section>
+    <center>
+    <table class="tab">
+<tr>
+    <td>
+        Taux : 
+    </td>
+    <td class="td1">
+        <input type="text" value="5" id="Taux" size="8px" class="blueciel" >
+        
+        
+    </td>
+    <td rowspan="3" class="simuler">
+        <button type="button" onclick="calculerMensualite()">&nbsp;&nbsp;&nbsp;SIMULER&nbsp;&nbsp;&nbsp;</button>
+    </td>
+    <td rowspan="3" class="MENSUALITE" >
+        &nbsp;&nbsp;&nbsp;  <b>MENSUALITE :</b> &nbsp;&nbsp;&nbsp; <p id="mensualite"></p>
+        
+       
+    </td>
+   
+</tr>
+<tr>
+    <td>
+        Montant : 
+    </td>
+    <td class="td1">
+        <input type="text" id="Montant" value="5000" size="8px" class="blueciel" min="5000" max="5000000">
+        
+    
+    </td>
+</tr>
+<tr>
+    <td>
+        Duree : 
+    </td>
+    <td class="td1">
+        <input type="text" id="Duree" value="6" size="8px" class="blueciel">
+        
+        
+    </td>
+</tr>
+
+
+<tr>
+    <td colspan=7 class="td2">
+        Simulation à titre exclusivement indicatif.<br>
+        Pour une simulation personnalisée, nous vous invitons à vous adresser à notre réseau d'agences CIH BANK
+    </td>
+</tr>
+    </table></center>
+   
+</section>
+<br><br>
+
+
+<p id="resultat"></p>
+
+<script>
+    function calculerMensualite() {
+        
+        const Taux1 = parseFloat(document.getElementById("Taux1").value) / 100;
+        const Montant1 = parseFloat(document.getElementById("Montant1").value);
+        const Duree1 = parseInt(document.getElementById("Duree1").value);
+
+        
+        const mensualite = (Montant1 * Taux1/12) / (1 - Math.pow(1 + Taux1/12, -Duree1));
+
+        document.getElementById("mensualite").innerHTML = ` ${mensualite.toFixed(2)}`;
+    }
+</script>
+
+
+</div>
+
+
+<script src="main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+</body>
+</html>
