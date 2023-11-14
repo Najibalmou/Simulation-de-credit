@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="main.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-       .loader {
+        .loader {
             position: fixed;
             top: 0;
             left: 0;
@@ -41,6 +41,7 @@
             from { transform: rotate(0turn)}
             to { transform: rotate(1turn)}
         }  
+
     </style>
 </head>
 <body>
@@ -52,6 +53,7 @@
 
 
     <section class="flex-col">
+        <img src="crescent-moon.png" id="icon">
         <div class="title ">
             <p class="text-center font-black text-orange-600 tracking-widest text-3xl py-12">Simuler mon crédit</p> <center><img src="CIH-Bank-removebg-preview.png" alt="Cih-bank" width="80px" class="cih"></center>
         </div>
@@ -81,7 +83,7 @@
     <center>
     <table class="tab">
 <tr>
-    <td>
+    <td class="tdcolor">
         Taux : 
     </td>
     <td class="td1">
@@ -90,7 +92,7 @@
         
     </td>
     <td rowspan="3" class="simuler">
-        <button type="button" onclick="calculerMensualite()">&nbsp;&nbsp;&nbsp;SIMULER&nbsp;&nbsp;&nbsp;</button>
+        <button type="button" onclick="calculerMensualite()">&nbsp;&nbsp;&nbsp;<p class="simuler">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIMULER</p>&nbsp;</button>
     </td>
     <td rowspan="3" class="MENSUALITE" >
         &nbsp;&nbsp;&nbsp;  <b>MENSUALITE :</b> &nbsp;&nbsp;&nbsp; <p id="mensualite"></p>
@@ -100,7 +102,7 @@
    
 </tr>
 <tr>
-    <td>
+    <td class="tdcolor">
         Montant : 
     </td>
     <td class="td1">
@@ -110,7 +112,7 @@
     </td>
 </tr>
 <tr>
-    <td>
+    <td class="tdcolor">
         Duree : 
     </td>
     <td class="td1">
@@ -159,7 +161,23 @@
             document.body.removeChild(document.querySelector(".loader"));
         });
     });
-</script>        
+</script>
+
+<script>
+
+  var icon = document.getElementById("icon");
+
+  icon.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")){
+        icon.src = "sunn-removebg.png";
+    }else{
+        icon.src = "crescent-moon.png";
+    }
+  }
+
+</script>
+
 
 </div>
 
