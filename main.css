@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(248, 248, 248);
+    background: var(--primary-color);
 }
 sup{
     font-weight: bold;
@@ -13,10 +13,12 @@ sub{
 }
 .container{
     text-align: center;
+    color: var(--secondry-color);
 }
 
 .p2{
     text-align: center;
+    color: var(--secondry-color);
 }
 .tab{
     margin-top: 40px;
@@ -31,17 +33,18 @@ td{
     padding: 2px;
 }
 .td1{
-    color: white;
+    color: var(--primary-color);
     font-weight: 600;
 }
 .simuler{
     background-color: #f15d22;
-    color: white;
+    color: var(--primary-color);
     font-weight: 600;
 }
 .MENSUALITE{
     font-family: Arial, Helvetica, sans-serif;
     border: 1px solid #f15d22;
+    color: var(--secondry-color);
 }
 #mensualite{
     color: #f15d22;
@@ -50,6 +53,32 @@ td{
 }
 .td2{
     margin-top: 20px;
+    color: var(--secondry-color);
+}
+
+.tdcolor{
+    color: var(--secondry-color);
+}
+
+.simuler{
+    color: var(--primary-color);
+}
+
+#icon{
+    width: 30px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+:root{
+    
+    --primary-color: #edf2fc;
+    --secondry-color: #212121;
+}
+
+.dark-theme{
+    --primary-color: #212121;
+    --secondry-color: #edf2fc;
 }
 
 
