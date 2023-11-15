@@ -62,6 +62,7 @@ td{
 .banka{
     width: 45px;
 }
+
 .simuler{
     color: var(--primary-color);
 }
@@ -84,3 +85,25 @@ td{
 }
 
 
+.langs{
+    margin-top: 20px;
+    margin-left: 10px;
+    color: var(--secondry-color);
+}
+a{
+    text-decoration: none;
+    padding: 12px;
+    font-weight: 650;
+    transition: .3s linear;
+    border-radius: 10%;
+}
+a:hover{
+    background: #82ce87;
+}
+.title{
+    color: var(--secondry-color);
+    margin: 8px;
+    font-weight: 600;
+    color: #498749;
+   
+}
