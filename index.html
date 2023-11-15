@@ -53,9 +53,9 @@
 
 
     <section class="flex-col">
-        <img src="crescent-moon.png" id="icon">
+        <img src="crescent-moon.png" id="icon"> <div class="langs"> <a href="#" language="english">ENG </a><a href="index.html"> FR </a><a href="#" language="germany"> GER</a></div>
         <div class="title ">
-            <p class="text-center font-black text-green-600 tracking-widest text-3xl py-12">Simuler mon crédit</p> <center><img src="banka.png" alt="Najib-logo" width="80px" class="banka"></center>
+            <p class="text-center font-black text-green-600 tracking-widest text-3xl py-12 title">Simuler mon crédit</p> <center><img src="banka.png" alt="Najib-logo" width="80px" class="banka" id="banka"></center>
         </div>
     </section>
     <p class="p2">Choisissez le taux , le montant et la durée de votre crédit</p>
@@ -63,13 +63,13 @@
     
 <section class="container">
 
-    Taux <sup><small>% </small></sup><input type="range" id="Taux1" min="2" max="13" step="0.1" class="w-1/2 h-2 bg-blue-400 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"><sub><small> 13%</small></sub>
+    <span class="tauxx"> Taux</span><sup><small>% </small></sup><input type="range" id="Taux1" min="2" max="13" step="0.1" class="w-1/2 h-2 bg-blue-400 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"><sub><small> 13%</small></sub>
     <br>
     
-    Montnat <sup><small>DHS </small></sup><input type="range" id="Montant1" min="5000" max="5000000" step="1000" class="w-1/2 h-2 bg-blue-400 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"><sub><small> 5,000,000 dhs</small></sub>
+    <span class="Montantt"> Montnat</span> <sup><small>DHS </small></sup><input type="range" id="Montant1" min="5000" max="5000000" step="1000" class="w-1/2 h-2 bg-blue-400 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"><sub><small> 5,000,000 dhs</small></sub>
     <br>
     
-    Durée <sup><small>MOIS </small></sup><input type="range" id="Duree1" min="6" max="300" class="w-1/2 h-2 bg-blue-400 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"><sub><small> 300 mois</small></sub>
+    <span class="Dureee"> Durée</span> <sup><small><span class="moiss"> MOIS</span></small></sup><input type="range" id="Duree1" min="6" max="300" class="w-1/2 h-2 bg-blue-400 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"><sub><small> 300 <span class="mois">mois</span></small></sub>
     
       <center>
       
@@ -84,7 +84,7 @@
     <table class="tab">
 <tr>
     <td class="tdcolor">
-        Taux : 
+        <span class="tauxxx">Taux :</span> 
     </td>
     <td class="td1">
         <input type="text" value="5" id="Taux" size="8px" class="blueciel" >
@@ -92,10 +92,10 @@
         
     </td>
     <td rowspan="3" class="simuler">
-        <button type="button" onclick="calculerMensualite()">&nbsp;&nbsp;&nbsp;<p class="simuler">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIMULER</p>&nbsp;</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="button" class="simulerr" onclick="calculerMensualite()">&nbsp;&nbsp;&nbsp;<p class="simuler">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIMULER</p>&nbsp;</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     </td>
     <td rowspan="3" class="MENSUALITE" >
-        &nbsp;&nbsp;&nbsp;  <b>MENSUALITE :</b> &nbsp;&nbsp;&nbsp; <p id="mensualite"></p>
+        &nbsp;&nbsp;&nbsp;  <b><span class="mensualitee">MENSUALITE :</span></b> &nbsp;&nbsp;&nbsp; <p id="mensualite"></p> 
         
        
     </td>
@@ -103,7 +103,7 @@
 </tr>
 <tr>
     <td class="tdcolor">
-        Montant : 
+        <span class="Montanttt">Montant :</span>
     </td>
     <td class="td1">
         <input type="text" id="Montant" value="5000" size="8px" class="blueciel" min="5000" max="5000000">
@@ -113,7 +113,7 @@
 </tr>
 <tr>
     <td class="tdcolor">
-        Duree : 
+        <span class="Dureeee">Duree :</span>
     </td>
     <td class="td1">
         <input type="text" id="Duree" value="6" size="8px" class="blueciel">
@@ -126,8 +126,7 @@
 <tr>
     <td colspan=7 class="td2">
         <br>
-        Nous vous souhaitons une excellente visite sur notre site.
-        
+      <p class="fin1">Nous vous souhaitons une excellente visite sur notre site.</p> 
     </td>
 </tr>
     </table></center>
@@ -179,7 +178,10 @@
 
 </script>
 
-   
+
+
+
+
 </div>
 
 
