@@ -4,12 +4,12 @@ body{
 sup{
     font-weight: bold;
     font-size: 10px;
-    color: #00aeee;
+    color: #498749;
 }
 sub{
     font-weight: bold;
     font-size: 11px;
-    color: #f15d22;
+    color: #557C55;
 }
 .container{
     text-align: center;
@@ -29,7 +29,7 @@ td{
     padding: 6px;
 }
 .blueciel{
-    background-color: #00aeee;
+    background-color: #557C55;
     padding: 2px;
 }
 .td1{
@@ -37,17 +37,17 @@ td{
     font-weight: 600;
 }
 .simuler{
-    background-color: #f15d22;
+    background-color: rgb(5, 163, 16);
     color: var(--primary-color);
     font-weight: 600;
 }
 .MENSUALITE{
     font-family: Arial, Helvetica, sans-serif;
-    border: 1px solid #f15d22;
+    border: 1px solid rgb(5, 163, 16);
     color: var(--secondry-color);
 }
 #mensualite{
-    color: #f15d22;
+    color: rgb(57, 148, 64);
     text-align: center;
     font-weight: 600;
 }
@@ -59,7 +59,9 @@ td{
 .tdcolor{
     color: var(--secondry-color);
 }
-
+.banka{
+    width: 45px;
+}
 .simuler{
     color: var(--primary-color);
 }
