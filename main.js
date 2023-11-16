@@ -110,6 +110,23 @@ moiss: 'Monat :',
 simulerr: 'Simulieren ',
 mensualitee: 'Monatliche Bezahlung ',
 
-    }
+    },
 
+    Arabic: {
+p2: "اختر المعدل والمبلغ ومدة الائتمان الخاص بك",
+fin1: "نتمنى لكم زيارة ممتازة لموقعنا.",
+title: "محاكاة الائتمان الخاصة بي",
+tauxx: 'معدل',
+Montantt: 'كمية',
+Dureee: 'شهر',
+Dureeee: 'شهر :',
+Montanttt: 'كمية :',
+tauxxx: 'معدل :',
+mois: 'شهر :',
+moiss: 'شهر :',
+simulerr: 'محاكاة ',
+mensualitee: ' الدفع الشهري ',
+
+            }
+        
 }
