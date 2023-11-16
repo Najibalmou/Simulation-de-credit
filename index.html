@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" type="x-icon" href="banka.png">
+    <link rel="shortcut icon" type="x-icon" href="greenbank.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIMULER UN CREDIT</title>
     <link rel="stylesheet" href="main.css">
@@ -53,7 +53,7 @@
 
 
     <section class="flex-col">
-        <img src="crescent-moon.png" id="icon"> <div class="langs"> <a href="#" language="english">ENG </a><a href="index.html"> FR </a><a href="#" language="germany"> GER</a></div>
+        <img src="crescent-moon.png" id="icon"> <div class="langs"> <a href="#" language="english">ENG </a><a href="index.html"> FR </a><a href="#" language="germany"> GER </a><a href="#" language="Arabic"> AR</a></div>
         <div class="title ">
             <p class="text-center font-black text-green-600 tracking-widest text-3xl py-12 title">Simuler mon crédit</p> <center><img src="banka.png" alt="Najib-logo" width="80px" class="banka" id="banka"></center>
         </div>
@@ -132,10 +132,26 @@
     </table></center>
    
 </section>
-<br><br>
+<br>
+<center>
+<div class="center">
+<div class="stars">
+ <input type="radio" id="five" name="rate" value="5">
+ <label for="five"></label>
+ <input type="radio" id="four" name="rate" value="4">
+ <label for="four"></label>
+ <input type="radio" id="three" name="rate" value="3">
+ <label for="three"></label>
+ <input type="radio" id="two" name="rate" value="2">
+ <label for="two"></label>
+ <input type="radio" id="one" name="rate" value="1">
+ <label for="one"></label>
+ <span class="result"></span>
+</div>
+</div>
+</center>
 
 
-<p id="resultat"></p>
 
 <script>
     function calculerMensualite() {
